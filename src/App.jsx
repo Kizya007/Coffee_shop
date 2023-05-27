@@ -3,7 +3,7 @@ import "./assets/Global.scss";
 
 function Home() {
   return (
-    <div className="container">
+    <div>
       <Header />
     </div>
   );
