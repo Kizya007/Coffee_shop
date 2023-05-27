@@ -1,0 +1,40 @@
+.header {
+  margin-top: 28px;
+
+  display: flex;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    &-link:nth-child(1) {
+      margin-left: 50px;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block-link {
+    .link {
+      text-decoration: none;
+      color: #ffc492;
+      margin-right: 12px;
+    }
+  }
+}
