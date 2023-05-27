@@ -1,8 +1,11 @@
 import Header from "./components/Header";
+import "./assets/Global.scss";
 
 function Home() {
   return (
-    <Header />
+    <div className="container">
+      <Header />
+    </div>
   );
 }
 

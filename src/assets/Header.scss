@@ -1,0 +1,30 @@
+.header {
+  margin-top: 28px;
+
+  display: flex;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-link {
+      margin-right: 40px;
+
+      text-decoration: none;
+      color: #fff;
+    }
+    &-link:nth-child(1) {
+      margin-left: 50px;
+    }
+
+    .block-link {
+        position: absolute;
+        right: 0;
+      .link {
+        text-decoration: none;
+        color: #FFC492;
+        margin-right: 12px;
+      }
+    }
+  }
+}
