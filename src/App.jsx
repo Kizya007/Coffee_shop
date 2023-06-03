@@ -1,10 +1,13 @@
 import Header from "./components/Header";
 import "./assets/Global.scss";
+import Banner from "./components/Banner";
+
 
 function Home() {
   return (
     <div>
       <Header />
+      <Banner />
     </div>
   );
 }
