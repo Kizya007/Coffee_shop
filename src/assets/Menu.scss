@@ -1,0 +1,52 @@
+.menu {
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #fff;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #ffb577;
+    }
+
+    &__subtitle {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    &__text {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+
+      color: #c4e4ea;
+    }
+
+    &__right {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: #b8b8b8;
+    }
+  }
+}
