@@ -6,9 +6,19 @@ import ArrowRightBlack from "../assets/icon/ArrowRightBlack";
 
 function About() {
   return (
+    // .about {
+    //   .left-block { 
+
+    //   }
+    // }
+    // about us
     <div className="about">
+      {/* left-block */}
       <div className="about-left">
+        {/* about-title
+        h1 - h2 */}
         <span className="about-left__title">KNOW MORE ABOUT US <div className="create-line"></div></span>
+          {/* в каком теге держат сабтайтл разобратся */}
         <p className="about-left__subtitle">
           We source sustainable & line caught Foods
         </p>
@@ -17,7 +27,9 @@ function About() {
           the text to start adding your own words. You can move the text by
           dragging and dropping the text anywhere on the page.
         </p>
+        {/* abouts-us__cards */}
         <div className="about-block">
+          {/* abouts-us__card */}
           <div className="about-block__information">
             <IconAbout />
             <span className="information__title">10+ People</span>

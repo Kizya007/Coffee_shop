@@ -10,21 +10,28 @@ function Serving() {
   return (
     <div className="serving">
       <span className="serving-title">
+        {/* .line */}
         WHAT WE ARE SERVING <div className="create-line"></div>
       </span>
       <div className="serving-subtitle">
+        {/* h2?h3? */}
+        {/* no subtile */}
         <p className="serving-subtitle__left">
           We all have to eat, so why not do it beautifully?
         </p>
+        {/* subtitle */}
         <span className="serving-subtitle__right">
           Through True Rich Attended does no end it his mother since favourable
           real had half every him case in packages enquire we up ecstatic..
           Through True Rich Attended does no end it his mother
         </span>
       </div>
+      {/* product__list */}
       <div className="serving-grid__list">
+        {/* product */}
         <div className="serving-grid">
           <QuafeCake />
+          {/* product-name */}
           <p className="serving-grid__title">Quafe Cake</p>
           <span className="serving-grid__subtitle">
             Through True Rich Attended no end it his mother since favourable
