@@ -8,73 +8,72 @@ import "../assets/Serving.scss";
 
 function Serving() {
   return (
-    <div className="serving">
-      <span className="serving-title">
-        {/* .line */}
-        WHAT WE ARE SERVING <div className="create-line"></div>
+    <div className="product">
+      <span className="product-title">
+        WHAT WE ARE SERVING <div className="line"></div>
       </span>
-      <div className="serving-subtitle">
+      <div className="product-subtitle">
         {/* h2?h3? */}
         {/* no subtile */}
-        <p className="serving-subtitle__left">
+        <p className="product-subtitle__left">
           We all have to eat, so why not do it beautifully?
         </p>
         {/* subtitle */}
-        <span className="serving-subtitle__right">
+        <span className="product-subtitle__right">
           Through True Rich Attended does no end it his mother since favourable
           real had half every him case in packages enquire we up ecstatic..
           Through True Rich Attended does no end it his mother
         </span>
       </div>
       {/* product__list */}
-      <div className="serving-grid__list">
+      <div className="product-cards">
         {/* product */}
-        <div className="serving-grid">
+        <div className="product-card">
           <QuafeCake />
           {/* product-name */}
-          <p className="serving-grid__title">Quafe Cake</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-card__title">Quafe Cake</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
         </div>
-        <div className="serving-grid">
+        <div className="product-card">
           <Cofee />
-          <p className="serving-grid__title">Cofee</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-card__title">Cofee</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
           <div className="create-line__serving"></div>
         </div>
-        <div className="serving-grid">
+        <div className="product-card">
           <FastFood />
-          <p className="serving-grid__title">Fast Food</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-card__title">Fast Food</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
         </div>
-        <div className="serving-grid">
+        <div className="product-card">
           <CocktailsIcon />
-          <p className="serving-grid__title">Cocktails</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-list__title">Cocktails</p>
+          <span className="product-list__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
         </div>
-        <div className="serving-grid">
+        <div className="product-card">
           <Grill />
-          <p className="serving-grid__title">Grill</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-list__title">Grill</p>
+          <span className="product-list__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
         </div>
-        <div className="serving-grid">
+        <div className="product-card">
           <Snacks />
-          <p className="serving-grid__title">Snacks</p>
-          <span className="serving-grid__subtitle">
+          <p className="product-list__title">Snacks</p>
+          <span className="product-list__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>

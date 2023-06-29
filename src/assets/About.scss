@@ -1,4 +1,4 @@
-.about {
+.about-us {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +6,13 @@
   color: #fff;
 
   max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
 
-  &-left {
-    &__title {
+  
+
+  .left-block {
+    .title {
       display: flex;
       align-items: center;
 
@@ -19,7 +23,7 @@
 
       color: #ffb577;
 
-      .create-line {
+      .line {
         width: 48px;
         border-top: 1px solid #fff;
 
@@ -27,7 +31,7 @@
       }
     }
 
-    &__subtitle {
+    .subtitle {
       font-family: "Playfair Display";
 
       font-style: normal;
@@ -38,7 +42,7 @@
       width: 613px;
     }
 
-    &__text {
+    .text {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -50,28 +54,33 @@
       color: #b8b8b8;
     }
   }
-  .about-block {
+  .cards {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    &__information {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &-information {
       width: 187px;
     }
   }
 
-  .information__title {
+  .card-title {
     margin-left: 7px;
 
     color: #c4e4ea;
   }
-  .information__subtitle {
+  .card-subtitle {
     color: #b8b8b8;
   }
-  .information__text {
+  .card-text {
     color: #b8b8b8;
   }
 
-  &-btn {
+  &__btn {
     margin-top: 32px;
 
     font-family: "Poppins";
@@ -91,10 +100,10 @@
 
     border: none;
   }
-  &-img__left {
+  .about-img__left {
     margin-left: 102px;
   }
-  &-img__right {
+  .about-img__right {
     margin-left: 67px;
     margin-bottom: 247px;
   }

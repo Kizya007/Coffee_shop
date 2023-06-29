@@ -1,52 +1,112 @@
 .menu {
+  margin: 0 auto;
   max-width: 100%;
+  width: 1280px;
+  .header {
+    max-width: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  color: #fff;
-
-  &-header {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
-    &__title {
-      font-family: "Playfair Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+    color: #fff;
 
-      color: #ffb577;
+    margin-bottom: 83px;
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #ffb577;
+
+        display: flex;
+        align-items: center;
+      }
+      .create-line {
+        width: 48px;
+        border-top: 1px solid #fff;
+
+        margin-left: 16px;
+      }
+
+      &__subtitle {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+      }
+
+      &__text {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #c4e4ea;
+      }
+
+      &__right {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: #b8b8b8;
+
+        width: 499px;
+      }
+    }
+  }
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin-bottom: 40px;
+
+    &__item {
+      width: 405px;
     }
 
-    &__subtitle {
-      font-family: "Playfair Display";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 58px;
+    .information {
+      display: flex;
+      justify-content: space-between;
+
+      background: #1f1d21;
+
+      color: #fff;
+
+      &-name {
+        padding: 24px 0 18px 32px;
+      }
+
+      &-price {
+        padding: 24px 32px 24px;
+      }
     }
+  }
+  &-btn {
+    position: absolute;
+    transform: translateX(-50%);
+    right: 42%;
 
-    &__text {
-      font-family: "Playfair Display";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 21px;
+    padding: 12px 52px 12px 24px;
 
-      color: #c4e4ea;
-    }
+    background: #ffb577;
+    border: none;
 
-    &__right {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-
-      color: #b8b8b8;
-    }
+    cursor: pointer;
   }
 }
