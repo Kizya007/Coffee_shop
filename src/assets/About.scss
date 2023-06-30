@@ -66,6 +66,10 @@
     &-information {
       width: 187px;
     }
+
+    .card:not(:nth-child(3)) {
+      margin-right: 32px;
+    }
   }
 
   .card-title {

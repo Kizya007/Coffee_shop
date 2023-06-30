@@ -1,8 +1,17 @@
 .review {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1280px;
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1280px;
 
+    .right-block {
+      margin-left: 78px;
+
+      &__img {
+        max-width: 100%;
+      }
+    }
+  }
   display: flex;
 
   margin-top: 120px;
@@ -66,14 +75,9 @@
 
         margin-top: 24px;
         position: absolute;
-        right: 58%;
+        right: 70%;
 
         margin-left: 79px;
-      }
-    }
-    .right-block {
-      &__img {
-        max-width: 100%;
       }
     }
   }

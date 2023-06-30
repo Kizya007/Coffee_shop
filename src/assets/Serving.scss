@@ -59,6 +59,11 @@
     display: flex;
     flex-wrap: wrap;
 
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
     background: rgba(0, 0, 0, 0.16);
   }
 
@@ -72,6 +77,8 @@
     margin-right: 128px;
     margin-bottom: 128px;
     margin-top: 64px;
+
+    position: relative;
 
     &__title {
       font-family: "Playfair Display";
@@ -90,5 +97,27 @@
 
       color: #b8b8b8;
     }
+
+    // // .product-line {
+    // //   position: absolute;
+    // //   right: 65%;
+    // //   top: 0%;
+
+    // //   width: 1px;
+    // //   height: 687px;
+
+    // //   background: rgba(255, 255, 255, 0.06);
+    // // }
+
+    // // .product-line__two {
+    // //   position: absolute;
+    // //   right: 65%;
+    // //   top: 0%;
+
+    // //   width: 1px;
+    // //   height: 687px;
+
+    // //   background: rgba(255, 255, 255, 0.06);
+    // }
   }
 }

@@ -13,72 +13,65 @@ function Serving() {
         WHAT WE ARE SERVING <div className="line"></div>
       </span>
       <div className="product-subtitle">
-        {/* h2?h3? */}
-        {/* no subtile */}
         <p className="product-subtitle__left">
           We all have to eat, so why not do it beautifully?
         </p>
-        {/* subtitle */}
         <span className="product-subtitle__right">
           Through True Rich Attended does no end it his mother since favourable
           real had half every him case in packages enquire we up ecstatic..
           Through True Rich Attended does no end it his mother
         </span>
       </div>
-      {/* product__list */}
-      <div className="product-cards">
-        {/* product */}
-        <div className="product-card">
+      <ul className="product-cards">
+        <li className="product-card">
           <QuafeCake />
-          {/* product-name */}
           <p className="product-card__title">Quafe Cake</p>
           <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-        </div>
-        <div className="product-card">
+        </li>
+        <li className="product-card">
           <Cofee />
           <p className="product-card__title">Cofee</p>
           <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-          <div className="create-line__serving"></div>
-        </div>
-        <div className="product-card">
+        </li>
+        <li className="product-card">
           <FastFood />
           <p className="product-card__title">Fast Food</p>
           <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-        </div>
-        <div className="product-card">
+        </li>
+        <li className="product-card">
           <CocktailsIcon />
-          <p className="product-list__title">Cocktails</p>
-          <span className="product-list__subtitle">
+          <p className="product-card__title">Cocktails</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-        </div>
-        <div className="product-card">
+        </li>
+        <li className="product-card">
           <Grill />
-          <p className="product-list__title">Grill</p>
-          <span className="product-list__subtitle">
+          <p className="product-card__title">Grill</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-        </div>
-        <div className="product-card">
+        </li>
+        <li className="product-card">
           <Snacks />
-          <p className="product-list__title">Snacks</p>
-          <span className="product-list__subtitle">
+          <p className="product-card__title">Snacks</p>
+          <span className="product-card__subtitle">
             Through True Rich Attended no end it his mother since favourable
             real had half every him.
           </span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 }
