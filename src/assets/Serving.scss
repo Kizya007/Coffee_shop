@@ -1,0 +1,138 @@
+.product {
+  color: #fff;
+
+  max-width: 1281px;
+  width: 100%;
+  margin: 0 auto;
+
+  &-title {
+    display: flex;
+    align-items: center;
+
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-bottom: 24px;
+
+    color: #ffb577;
+
+    .line {
+      width: 48px;
+      border-top: 1px solid #fff;
+
+      margin-left: 16px;
+    }
+  }
+  &-subtitle {
+    display: flex;
+    align-items: center;
+
+    &__left {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+
+      color: #ffffff;
+
+      opacity: 0.87;
+
+      margin-right: 58px;
+
+      width: 660px;
+    }
+
+    &__right {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+
+      color: #b8b8b8;
+
+      width: 549px;
+    }
+  }
+  &-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    background: rgba(0, 0, 0, 0.16);
+
+    &::before,
+    &::after {
+      content: "";
+      height: 100%;
+      width: 1px;
+
+      position: absolute;
+      background: #232025;
+    }
+    &::after {
+      right: 427px;
+    }
+    &::before {
+      left: 427px;
+    }
+  }
+
+  .product-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 64px;
+    width: 299px;
+    margin-bottom: 128px;
+    margin-top: 64px;
+
+    position: relative;
+
+    &__title {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    &__subtitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+
+      color: #b8b8b8;
+    }
+
+    // // .product-line {
+    // //   position: absolute;
+    // //   right: 65%;
+    // //   top: 0%;
+
+    // //   width: 1px;
+    // //   height: 687px;
+
+    // //   background: rgba(255, 255, 255, 0.06);
+    // // }
+
+    // // .product-line__two {
+    // //   position: absolute;
+    // //   right: 65%;
+    // //   top: 0%;
+
+    // //   width: 1px;
+    // //   height: 687px;
+
+    // //   background: rgba(255, 255, 255, 0.06);
+    // }
+  }
+}

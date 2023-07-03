@@ -1,0 +1,84 @@
+.review {
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1280px;
+
+    .right-block {
+      margin-left: 78px;
+
+      &__img {
+        max-width: 100%;
+      }
+    }
+  }
+  display: flex;
+
+  margin-top: 120px;
+
+  color: #fff;
+  background: #1f1d21;
+
+  margin-top: 160px;
+
+  .left-block {
+    &__title {
+      font-size: 72px;
+      line-height: 92px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+
+      width: 436px;
+    }
+
+    .person {
+      display: flex;
+      justify-content: space-between;
+
+      &-name {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        .line {
+          display: flex;
+          justify-content: space-between;
+
+          margin-bottom: 84px;
+
+          .line-black {
+            width: 437px;
+
+            border: 1px solid #ffffff;
+
+            opacity: 0.24;
+          }
+          .line-white {
+            width: 49px;
+
+            border: 2px solid #ffffff;
+          }
+        }
+      }
+      &-img {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-top: 24px;
+        position: absolute;
+        right: 70%;
+
+        margin-left: 79px;
+      }
+    }
+  }
+}

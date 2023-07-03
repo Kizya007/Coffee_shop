@@ -1,0 +1,114 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+
+  max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+
+  
+
+  .left-block {
+    .title {
+      display: flex;
+      align-items: center;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #ffb577;
+
+      .line {
+        width: 48px;
+        border-top: 1px solid #fff;
+
+        margin-left: 16px;
+      }
+    }
+
+    .subtitle {
+      font-family: "Playfair Display";
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+
+      width: 613px;
+    }
+
+    .text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      width: 624px;
+
+      color: #b8b8b8;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &-information {
+      width: 187px;
+    }
+
+    .card:not(:nth-child(3)) {
+      margin-right: 32px;
+    }
+  }
+
+  .card-title {
+    margin-left: 7px;
+
+    color: #c4e4ea;
+  }
+  .card-subtitle {
+    color: #b8b8b8;
+  }
+  .card-text {
+    color: #b8b8b8;
+  }
+
+  &__btn {
+    margin-top: 32px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2e2d33;
+    background: #ffb577;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 54px;
+
+    cursor: pointer;
+
+    border: none;
+  }
+  .about-img__left {
+    margin-left: 102px;
+  }
+  .about-img__right {
+    margin-left: 67px;
+    margin-bottom: 247px;
+  }
+}

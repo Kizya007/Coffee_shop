@@ -1,0 +1,78 @@
+.blog {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1280px;
+
+  margin-bottom: 160px;
+
+  color: #fff;
+  &-title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    margin-top: 160px;
+  }
+  &-list {
+    display: flex;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      width: 341px;
+
+      margin: 0;
+      padding: 32px;
+      margin-right: 32px;
+
+      background: #1f1d21;
+
+      list-style-type: none;
+    }
+
+    &__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+
+      color: #b8b8b8;
+
+      width: 73px;
+    }
+    &__subtitle {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+
+      opacity: 0.87;
+
+      width: 341px;
+    }
+    &__text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: #b8b8b8;
+
+      width: 341px;
+    }
+    &__img {
+        width: 341px;
+
+        img {
+          width: 341px;
+        }
+    }
+  }
+}
