@@ -1,6 +1,7 @@
 import "../assets/Header.scss";
 import Logo from "../assets/icon/Logo";
 import ArrowRight from "../assets/icon/ArrowRight";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -21,9 +22,7 @@ function Header() {
             <a href="" className="navigation-link">
               Our Story
             </a>
-            <a href="" className="navigation-link">
-              Blog
-            </a>
+            <Link to={"/Blog"} className="navigation-link"> Blog</Link>
             <a href="" className="navigation-link">
               Contact
             </a>
