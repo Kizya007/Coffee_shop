@@ -5,14 +5,17 @@ import menu3 from "../assets/img/menu3.png";
 import menu4 from "../assets/img/menu4.png";
 import menu5 from "../assets/img/menu5.png";
 import menu6 from "../assets/img/menu6.png";
-import ArrowRightBlack from "../assets/icon/ArrowRightBlack"
+import ArrowRightBlack from "../assets/icon/ArrowRightBlack";
 
-function Menu() {
+function menu(props) {
+  console.log(props);
   return (
     <div className="menu">
       <div className="header">
         <div className="header-menu">
-          <p className="header-menu__title">OUR MENU <div className="create-line"></div></p>
+          <p className="header-menu__title">
+            OUR MENU <div className="create-line"></div>
+          </p>
           <p className="header-menu__subtitle">Discover our menu chart</p>
           <p className="header-menu__text">Most Popular Picks</p>
         </div>
@@ -23,51 +26,20 @@ function Menu() {
         </span>
       </div>
       <div className="menu-list">
-        <div className="menu-list__item">
-          <img src={menu1} />
-          <div className="information">
-            <span className="information-name">Drp Cofee</span>
-            <span className="information-price">$8.85</span>
+        {props.products.map((product) => (
+          <div className="menu-list__item">
+            {product.img}
+            <div className="information">
+              <span className="information-name">{product.name}</span>
+              <span className="information-price">{product.price}</span>
+            </div>
           </div>
-        </div>
-        <div className="menu-list__item">
-          <img src={menu2} />
-          <div className="information">
-            <span className="information-name">Choco Cup Cake</span>
-            <span className="information-price">$4.85</span>
-          </div>
-        </div>
-        <div className="menu-list__item">
-          <img src={menu3} />
-          <div className="information">
-            <span className="information-name">Chicken Burger</span>
-            <span className="information-price">$8.85</span>
-          </div>
-        </div>
-        <div className="menu-list__item">
-          <img src={menu4} />
-          <div className="information">
-            <span className="information-name">French Fries</span>
-            <span className="information-price">$7.85</span>
-          </div>
-        </div>
-        <div className="menu-list__item">
-          <img src={menu5} />
-          <div className="information">
-            <span className="information-name">Sandwitch</span>
-            <span className="information-price">$3.97</span>
-          </div>
-        </div>
-        <div className="menu-list__item">
-          <img src={menu6} />
-          <div className="information">
-            <span className="information-name">Drp Cofee</span>
-            <span className="information-price">$8.85</span>
-          </div>
-        </div>
+        ))}
       </div>
-      <button className="menu-btn">View Menu <ArrowRightBlack/> </button>
+      <button className="menu-btn">
+        View Menu <ArrowRightBlack />{" "}
+      </button>
     </div>
   );
 }
-export default Menu;
+export default menu;

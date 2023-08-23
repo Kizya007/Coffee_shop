@@ -1,3 +1,4 @@
+@import "./mixin.scss";
 .product {
   color: #fff;
 
@@ -5,6 +6,7 @@
   width: 100%;
   margin: 0 auto;
 
+  padding: 0 16px;
   &-title {
     display: flex;
     align-items: center;
@@ -28,6 +30,14 @@
   &-subtitle {
     display: flex;
     align-items: center;
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+    }
 
     &__left {
       font-family: "Playfair Display";
@@ -42,6 +52,21 @@
       margin-right: 58px;
 
       width: 660px;
+
+      @include responsive(desktop) {
+
+        font-size: 40px;
+
+        width: auto;
+      }
+      @include responsive(phone) {
+        margin-right: 0;
+      }
+
+      @include responsive(desktop) {
+
+        font-size: 25px;
+      }
     }
 
     &__right {
@@ -53,6 +78,14 @@
       color: #b8b8b8;
 
       width: 549px;
+
+      @include responsive(desktop) {
+        width: auto;
+      }
+      @include responsive(desktop) {
+
+        font-size: 15px;
+      }
     }
   }
   &-cards {
@@ -67,6 +100,11 @@
 
     background: rgba(0, 0, 0, 0.16);
 
+    @include responsive(desktop) {
+      display: flex;
+      justify-content: center;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -77,10 +115,16 @@
       background: #232025;
     }
     &::after {
-      right: 427px;
+      right: 36%;
+      @include responsive(desktop) {
+        display: none;
+      }
     }
     &::before {
-      left: 427px;
+      left: 32%;
+      @include responsive(desktop) {
+        display: none;
+      }
     }
   }
 
@@ -88,10 +132,14 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 0 64px;
+    padding: 0 57px;
     width: 299px;
     margin-bottom: 128px;
     margin-top: 64px;
+
+    @include responsive(tablet) {
+      margin-bottom: 10px;
+    }
 
     position: relative;
 
@@ -112,27 +160,5 @@
 
       color: #b8b8b8;
     }
-
-    // // .product-line {
-    // //   position: absolute;
-    // //   right: 65%;
-    // //   top: 0%;
-
-    // //   width: 1px;
-    // //   height: 687px;
-
-    // //   background: rgba(255, 255, 255, 0.06);
-    // // }
-
-    // // .product-line__two {
-    // //   position: absolute;
-    // //   right: 65%;
-    // //   top: 0%;
-
-    // //   width: 1px;
-    // //   height: 687px;
-
-    // //   background: rgba(255, 255, 255, 0.06);
-    // }
   }
 }

@@ -8,9 +8,9 @@ function About() {
   return (
     <div className="about-us">
       <div className="left-block">
-        <h1 className="title">
+        <p className="title">
           KNOW MORE ABOUT US <div className="line"></div>
-        </h1>
+        </p>
         <p className="subtitle">We source sustainable & line caught Foods</p>
         <p className="text">
           Edit this text to make it your own. To edit, simply click directly on

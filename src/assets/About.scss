@@ -1,3 +1,5 @@
+@import "../assets/mixin.scss";
+
 .about-us {
   display: flex;
   justify-content: center;
@@ -9,9 +11,39 @@
   width: 1280px;
   margin: 0 auto;
 
-  
+  padding: 0 16px;
+
+  margin-bottom: 100px;
+
+  @include responsive(tablet) {
+    width: auto;
+    max-width: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   .left-block {
+    width: 613px;
+
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+
+      width: auto;
+    }
+
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      
+    }
     .title {
       display: flex;
       align-items: center;
@@ -40,6 +72,13 @@
       line-height: 58px;
 
       width: 613px;
+
+      @include responsive(tablet) {
+        font-size: 30px;
+        line-height: 38px;
+
+        width: auto;
+      }
     }
 
     .text {
@@ -52,6 +91,12 @@
       width: 624px;
 
       color: #b8b8b8;
+
+      @include responsive(tablet) {
+        margin-bottom: 20px;
+
+        width: auto;
+      }
     }
   }
   .cards {
@@ -62,6 +107,15 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 187px;
+    }
 
     &-information {
       width: 187px;
@@ -103,12 +157,33 @@
     cursor: pointer;
 
     border: none;
+
+    @include responsive(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 164px;
+      height: 48px;
+
+      svg {
+        display: none;
+      }
+    }
   }
   .about-img__left {
     margin-left: 102px;
+
+    @include responsive(desktop) {
+      display: none;
+    }
   }
   .about-img__right {
     margin-left: 67px;
     margin-bottom: 247px;
+
+    @include responsive(desktop) {
+      display: none;
+    }
   }
 }

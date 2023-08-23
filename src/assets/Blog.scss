@@ -1,3 +1,5 @@
+@import "./mixin.scss";
+
 .blog {
   margin: 0 auto;
   max-width: 100%;
@@ -14,9 +16,28 @@
     line-height: 58px;
 
     margin-top: 160px;
+
+    @include responsive(tablet) {
+      text-align: center;
+
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
   &-list {
     display: flex;
+
+    @include responsive(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     &__item {
       display: flex;
@@ -32,6 +53,24 @@
       background: #1f1d21;
 
       list-style-type: none;
+
+      @include responsive(desktop) {
+        margin-right: 10px;
+
+        margin-bottom: 10px;
+      }
+
+      @include responsive(tablet) {
+        margin-right: 0;
+      }
+
+      @include responsive(phone) {
+        width: auto;
+      }
+    }
+
+    &__item:nth-child(3) {
+      margin-right: 0;
     }
 
     &__title {
@@ -68,11 +107,11 @@
       width: 341px;
     }
     &__img {
-        width: 341px;
+      width: 341px;
 
-        img {
-          width: 341px;
-        }
+      img {
+        width: 341px;
+      }
     }
   }
 }

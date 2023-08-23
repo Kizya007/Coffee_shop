@@ -1,14 +1,29 @@
-.review {
-  .container {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 1280px;
+@import "./mixin.scss";
 
+.review {
+  padding: 0 16px;
+
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1280px;
+  .container {
     .right-block {
       margin-left: 78px;
 
       &__img {
-        max-width: 100%;
+        width: 925px;
+        height: 668px;
+        @media screen and (max-width: 1550px) {
+          width: auto;
+          height: auto;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+        @include responsive(tablet) {
+          display: none;
+        }
       }
     }
   }
@@ -25,6 +40,11 @@
     &__title {
       font-size: 72px;
       line-height: 92px;
+
+      @include responsive(tablet) {
+        font-size: 40px;
+        line-height: 40px;
+      }
     }
     &__text {
       font-style: normal;
@@ -33,11 +53,21 @@
       line-height: 48px;
 
       width: 436px;
+
+      @include responsive(tablet) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      @include responsive(phone) {
+        width: auto;
+      }
     }
 
     .person {
       display: flex;
       justify-content: space-between;
+
+      position: relative;
 
       &-name {
         font-family: "Poppins";
@@ -51,6 +81,10 @@
           justify-content: space-between;
 
           margin-bottom: 84px;
+
+          @include responsive(phone) {
+            display: none;
+          }
 
           .line-black {
             width: 437px;
@@ -75,7 +109,7 @@
 
         margin-top: 24px;
         position: absolute;
-        right: 70%;
+        right: 0%;
 
         margin-left: 79px;
       }

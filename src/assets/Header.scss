@@ -1,12 +1,25 @@
+@import "./mixin.scss";
+
 .header {
   margin-top: 28px;
 
+  padding: 0 16px;
+
   display: flex;
+
+  @include responsive(tablet) {
+    
+  }
 
   .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include responsive(tablet) {
+      display: none;
+    }
+
     &-link {
       text-decoration: none;
       color: #fff;
@@ -18,6 +31,7 @@
     &-link:nth-child(1) {
       margin-left: 50px;
     }
+    
   }
   .container {
     display: flex;
@@ -31,6 +45,8 @@
     justify-content: center;
   }
   .block-link {
+    display: flex;
+    align-items: center;
     .link {
       text-decoration: none;
       color: #ffc492;
@@ -38,3 +54,4 @@
     }
   }
 }
+

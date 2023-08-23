@@ -1,0 +1,208 @@
+@import "../assets/mixin.scss";
+
+.banner {
+  margin-top: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 16px;
+
+  margin-bottom: 160px;
+
+  &-left {
+    max-width: 624px;
+
+    margin-right: 32px;
+
+    @include responsive(desktop) {
+      margin-right: 0;
+    }
+    @include responsive(tablet) {
+      width: auto;
+      max-width: 100%;
+
+      padding: 0 16px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 68px;
+
+      @include responsive(tablet) {
+        font-size: 50px;
+        line-height: 50px;
+
+        text-align: center;
+      }
+
+      @include responsive(phone) {
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+
+    &__subtitle {
+      color: #b8b8b8;
+      margin-bottom: 32px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      width: 624px;
+
+      @include responsive(tablet) {
+        text-align: center;
+
+        width: auto;
+      }
+    }
+
+    &__link {
+      margin-right: 8px;
+
+      text-decoration: none;
+      color: #2e2d33;
+      background: #ffb577;
+
+      padding: 12px 52px 12px 24px;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      @include responsive(tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+
+        padding: 0;
+
+        width: 164px;
+        height: 48px;
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    .information {
+      &-opening {
+        margin-top: 40px;
+        margin-bottom: 16px;
+
+        @include responsive(tablet) {
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__title {
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        &__subtitle {
+          color: #b8b8b8;
+
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+
+      &-location {
+        margin-bottom: 16px;
+
+        @include responsive(tablet) {
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__title {
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        &__subtitle {
+          color: #b8b8b8;
+
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+
+      &-call {
+        @include responsive(tablet) {
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__title {
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        &__subtitle {
+          color: #b8b8b8;
+
+          margin: 0;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  &-right {
+    width: 622px;
+    height: 683px;
+
+    @include responsive(desktop) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
