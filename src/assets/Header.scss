@@ -1,11 +1,16 @@
 @import "./mixin.scss";
-
 .header {
   margin-top: 28px;
 
   padding: 0 16px;
 
   display: flex;
+
+  max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+
+  padding: 0 16px;
 
   @include responsive(tablet) {
     

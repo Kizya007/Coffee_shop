@@ -4,7 +4,7 @@ import ArrowRightBlack from "../assets/icon/ArrowRightBlack";
 
 function Banner() {
   return (
-    <div className="banner container">
+    <div className="banner">
       {/* banner-description */}
       <div className="banner-left">
         <h1 className="banner-left__title">
@@ -18,26 +18,27 @@ function Banner() {
           View menu
           <ArrowRightBlack />
         </a>
-        {/* ul */}
-        <div className="information">
-          {/* <li></li> */}
-          <div className="information-opening">
+        <ul className="information">
+          <li className="information-opening">
             <h4 className="information-opening__title">Opening Times</h4>
             {/* description */}
-            <p className="information-opening__subtitle">Sunday to Saturday  l  09:00 AM to 11:00 PM</p>
-          </div>
-          <div className="information-location">
+            <p className="information-opening__subtitle">
+              Sunday to Saturday  l  09:00 AM to 11:00 PM
+            </p>
+          </li>
+          <li className="information-location">
             <h4 className="information-location__title">Location</h4>
-            <p className="information-location__subtitle">Master canteen, BBSR , Odisha 752054</p>
-          </div>
-          <div className="information-call">
+            <p className="information-location__subtitle">
+              Master canteen, BBSR , Odisha 752054
+            </p>
+          </li>
+          <li className="information-call">
             <h4 className="information-call__title">Call us</h4>
             <p className="information-call__subtitle">+9776462441</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-      {/* right-block */}
-      <div className="banner-right">
+      <div className="right-block">
         <img src={Coffee} />
       </div>
     </div>

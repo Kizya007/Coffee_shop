@@ -8,11 +8,11 @@ function About() {
   return (
     <div className="about-us">
       <div className="left-block">
-        <p className="title">
+        <p className="name-section">
           KNOW MORE ABOUT US <div className="line"></div>
         </p>
-        <p className="subtitle">We source sustainable & line caught Foods</p>
-        <p className="text">
+        <p className="title">We source sustainable & line caught Foods</p>
+        <p className="subtitle">
           Edit this text to make it your own. To edit, simply click directly on
           the text to start adding your own words. You can move the text by
           dragging and dropping the text anywhere on the page.
