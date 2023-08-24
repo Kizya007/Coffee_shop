@@ -58,7 +58,7 @@ function Home() {
       <Review />
       <Blog />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
