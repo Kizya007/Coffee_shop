@@ -3,10 +3,12 @@
   color: #fff;
 
   max-width: 1281px;
-  width: 100%;
   margin: 0 auto;
 
-  ;
+  padding: 0 16px;
+
+  margin-bottom: 80px;
+
   &-title {
     display: flex;
     align-items: center;
@@ -30,6 +32,14 @@
   &-subtitle {
     display: flex;
     align-items: center;
+
+    @include responsive(desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     @include responsive(tablet) {
       display: flex;
       flex-direction: column;
@@ -54,18 +64,17 @@
       width: 660px;
 
       @include responsive(desktop) {
-
         font-size: 40px;
 
         width: auto;
       }
-      @include responsive(phone) {
-        margin-right: 0;
+
+      @include responsive(tablet) {
+        font-size: 28px;
       }
 
-      @include responsive(desktop) {
-
-        font-size: 25px;
+      @include responsive(phone) {
+        margin-right: 0;
       }
     }
 
@@ -80,11 +89,13 @@
       width: 549px;
 
       @include responsive(desktop) {
-        width: auto;
-      }
-      @include responsive(desktop) {
+        text-align: center;
+        width: 600px;
 
         font-size: 15px;
+      }
+      @include responsive(phone) {
+        width: auto;
       }
     }
   }
@@ -132,13 +143,11 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 0 57px;
+    padding: 64px 64px;
     width: 299px;
-    margin-bottom: 128px;
-    margin-top: 64px;
 
     @include responsive(tablet) {
-      margin-bottom: 10px;
+      padding: 24px ;
     }
 
     position: relative;

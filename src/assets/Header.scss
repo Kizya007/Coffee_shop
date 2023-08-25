@@ -10,6 +10,13 @@
 
   margin-bottom: 50px;
 
+  .container {
+    
+    @include responsive(desktop) {
+      padding: 0 16px;
+    }
+  }
+
   @include responsive(tablet) {
   }
 

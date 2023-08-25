@@ -2,10 +2,11 @@
 
 .menu {
   margin: 0 auto;
-  max-width: 100%;
-  width: 1280px;
 
-  ;
+  max-width: 1280px;
+
+  padding: 0 16px;
+
   .header {
     max-width: 100%;
 
@@ -16,6 +17,14 @@
     color: #fff;
 
     margin-bottom: 83px;
+
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
 
     @include responsive(phone) {
       display: flex;
@@ -28,7 +37,6 @@
       flex-direction: column;
 
       &__title {
-        font-family: "Playfair Display";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
