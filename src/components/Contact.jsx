@@ -6,20 +6,24 @@ function Contact() {
     <div className="contact">
       <div className="contact-text">
         <ul className="contact-text__list">
-          <li className="title">Working Hour</li>
-          <li className="text">Sunday to Saturday</li>
-          <li className="text">09:00 AM to 11:00 PM</li>
+          <li className="title">Working Hour </li>
+          <li className="text">
+            Sunday to Saturday <br /> 09:00 AM to 11:00 PM
+          </li>
         </ul>
         <ul className="contact-text__list">
           <li className="title">Location</li>
-          <li className="text">Street - 127, New York,</li>
-          <li className="text">United States</li>
-          <li className="text">546544</li>
+          <li className="text">
+            Street - 127, New York, <br /> United States <br /> 546544
+          </li>
         </ul>
         <ul className="contact-text__list">
-          <li className="title">Contact us </li>
-          <li className="text">+123456789</li>
-          <li className="text">hey@yourdomain.com</li>
+          <li className="title">
+            Contact us
+            <li className="text">
+              +123456789 <br /> hey@yourdomain.com
+            </li>
+          </li>
         </ul>
       </div>
       <div className="contact-img">

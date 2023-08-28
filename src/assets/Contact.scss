@@ -33,9 +33,17 @@
     padding-left: 64px;
 
     @include responsive(tablet) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
       padding-left: 0;
 
       width: auto;
+    }
+
+    @include responsive(phone) {
+      flex-direction: column;
     }
 
     &__list {
@@ -44,6 +52,21 @@
       padding: 0;
 
       margin-bottom: 32px;
+
+      @include responsive(tablet) {
+        margin: 0;
+
+        width: 190px;
+      }
+
+      
+      @include responsive(phone) {
+        text-align: start;
+
+        margin-bottom: 20px;
+
+        width: 200px;
+      }
 
       .title {
         font-style: normal;
